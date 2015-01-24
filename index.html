@@ -1,0 +1,36 @@
+<h1 class="header" id="super_header"> 
+	HEADER 1 
+
+</h1>
+<h2 class="header"> HEADER 2 </h2>
+<h3 class="header"> HEADER 3 </h3>
+
+<p>its a paragraph</p>
+
+<button type="button" onclick="say_hello()">Click Me!</button>
+
+<style>
+.header{
+	color: yellow;
+}
+#super_header{
+	color:green;
+}
+</style>
+
+<script>
+var count=0;
+var sh = document.getElementById("super_header");
+
+function say_hello() {
+	sh.innerHTML = "Click count "+count;
+	count=count+1;
+};
+
+
+
+
+
+
+
+</script>
